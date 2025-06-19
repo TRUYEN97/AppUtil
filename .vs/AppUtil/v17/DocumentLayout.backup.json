@@ -1,0 +1,174 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\lib\\AppUtil\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|AppUtil||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\errorcodemapper\\errorcodeanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\errorcodemapper\\errorcodeanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\errorcodemapper\\errorcodemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\errorcodemapper\\errorcodemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\errorcodemapper\\errorcodemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\errorcodemapper\\errorcodemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\errorcodemapper\\errorcodemapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\errorcodemapper\\errorcodemapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\errorcodemapper\\loaderrorcodeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\errorcodemapper\\loaderrorcodeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\service\\checkcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\checkcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\service\\mysftp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\mysftp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\service\\sftpconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\sftpconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppUtil",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\AppUtil.csproj",
+              "RelativeDocumentMoniker": "AppUtil\\AppUtil.csproj",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\AppUtil.csproj",
+              "RelativeToolTip": "AppUtil\\AppUtil.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-19T09:16:58.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SftpConfig.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\service\\SftpConfig.cs",
+              "RelativeDocumentMoniker": "AppUtil\\service\\SftpConfig.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\service\\SftpConfig.cs",
+              "RelativeToolTip": "AppUtil\\service\\SftpConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:15:33.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MySftp.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\service\\MySftp.cs",
+              "RelativeDocumentMoniker": "AppUtil\\service\\MySftp.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\service\\MySftp.cs",
+              "RelativeToolTip": "AppUtil\\service\\MySftp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:15:29.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CheckCondition.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\service\\CheckCondition.cs",
+              "RelativeDocumentMoniker": "AppUtil\\service\\CheckCondition.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\service\\CheckCondition.cs",
+              "RelativeToolTip": "AppUtil\\service\\CheckCondition.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:15:26.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ErrorCodeMapperConfig.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcodemapper\\ErrorCodeMapperConfig.cs",
+              "RelativeDocumentMoniker": "AppUtil\\Errorcodemapper\\ErrorCodeMapperConfig.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcodemapper\\ErrorCodeMapperConfig.cs",
+              "RelativeToolTip": "AppUtil\\Errorcodemapper\\ErrorCodeMapperConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:14:34.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ErrorCodeMapper.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcodemapper\\ErrorCodeMapper.cs",
+              "RelativeDocumentMoniker": "AppUtil\\Errorcodemapper\\ErrorCodeMapper.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcodemapper\\ErrorCodeMapper.cs",
+              "RelativeToolTip": "AppUtil\\Errorcodemapper\\ErrorCodeMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:14:23.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoadErrorCodeConfig.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcodemapper\\LoadErrorCodeConfig.cs",
+              "RelativeDocumentMoniker": "AppUtil\\Errorcodemapper\\LoadErrorCodeConfig.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcodemapper\\LoadErrorCodeConfig.cs",
+              "RelativeToolTip": "AppUtil\\Errorcodemapper\\LoadErrorCodeConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:02:10.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ErrorCodeModel.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcodemapper\\ErrorCodeModel.cs",
+              "RelativeDocumentMoniker": "AppUtil\\Errorcodemapper\\ErrorCodeModel.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcodemapper\\ErrorCodeModel.cs",
+              "RelativeToolTip": "AppUtil\\Errorcodemapper\\ErrorCodeModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T08:24:32.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ErrorCodeAnalysis.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcodemapper\\ErrorCodeAnalysis.cs",
+              "RelativeDocumentMoniker": "AppUtil\\Errorcodemapper\\ErrorCodeAnalysis.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcodemapper\\ErrorCodeAnalysis.cs",
+              "RelativeToolTip": "AppUtil\\Errorcodemapper\\ErrorCodeAnalysis.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T07:48:43.643Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

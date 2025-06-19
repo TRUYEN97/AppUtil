@@ -1,0 +1,4 @@
+D:\C#\lib\AppUtil\AppUtil\obj\Debug\AppUtil.csproj.AssemblyReference.cache
+D:\C#\lib\AppUtil\AppUtil\obj\Debug\AppUtil.csproj.CoreCompileInputs.cache
+D:\C#\lib\AppUtil\AppUtil\obj\Debug\AppUtil.dll
+D:\C#\lib\AppUtil\AppUtil\obj\Debug\AppUtil.pdb
