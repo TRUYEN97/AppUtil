@@ -85,11 +85,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\Util.cs" />
-    <Compile Include="Errorcodemapper\ErrorCodeAnalysis.cs" />
-    <Compile Include="Errorcodemapper\ErrorCodeMapper.cs" />
-    <Compile Include="Errorcodemapper\ErrorCodeMapperConfig.cs" />
-    <Compile Include="Errorcodemapper\ErrorCodeModel.cs" />
-    <Compile Include="Errorcodemapper\LoadErrorCodeConfig.cs" />
+    <Compile Include="Errorcode\ErrorCodeAnalysis.cs" />
+    <Compile Include="Errorcode\ErrorCodeMapper.cs" />
+    <Compile Include="Errorcode\ErrorCodeMapperConfig.cs" />
+    <Compile Include="Errorcode\ErrorCodeModel.cs" />
+    <Compile Include="Errorcode\LoadErrorCodeConfig.cs" />
+    <Compile Include="Errorcode\SpecialErrorCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="service\CheckCondition.cs" />
     <Compile Include="service\MySftp.cs" />
