@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using AppUtil.Service;
 
-namespace AppUtil.service
+namespace AppUtil.Service
 {
     public class CheckConditionFactory
     {
