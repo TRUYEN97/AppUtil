@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "D:\\C#\\lib\\AppUtil\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\errorcode\\errorcodemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\errorcode\\errorcodemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\errorcode\\errorcodemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\service\\checkcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\service\\checkcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\checkcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\service\\checkconditionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\service\\checkconditionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\checkconditionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -54,8 +54,7 @@
               "RelativeToolTip": "AppUtil\\service\\CheckCondition.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T03:33:53.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T03:33:53.147Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "AppUtil\\service\\CheckConditionFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T03:04:03.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T03:04:03.525Z"
             },
             {
               "$type": "Document",
@@ -126,7 +124,7 @@
               "RelativeDocumentMoniker": "AppUtil\\Errorcode\\ErrorCodeMapper.cs",
               "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\ErrorCodeMapper.cs",
               "RelativeToolTip": "AppUtil\\Errorcode\\ErrorCodeMapper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswDkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T09:14:23.617Z",
               "EditorCaption": ""

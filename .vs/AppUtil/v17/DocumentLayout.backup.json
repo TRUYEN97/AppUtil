@@ -3,15 +3,18 @@
   "WorkspaceRootPath": "D:\\C#\\lib\\AppUtil\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\errorcode\\errorcodemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|AppUtil||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\errorcode\\errorcodemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\errorcode\\errorcodemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\service\\checkcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\service\\checkcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\checkcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\service\\checkconditionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\service\\checkconditionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\checkconditionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -33,6 +36,9 @@
     {
       "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\service\\mysftp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\mysftp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,11 +48,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "AppUtil",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\AppUtil.csproj",
+              "RelativeDocumentMoniker": "AppUtil\\AppUtil.csproj",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\AppUtil.csproj",
+              "RelativeToolTip": "AppUtil\\AppUtil.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-20T04:07:14.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CheckCondition.cs",
               "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\service\\CheckCondition.cs",
               "RelativeDocumentMoniker": "AppUtil\\service\\CheckCondition.cs",
@@ -54,12 +72,11 @@
               "RelativeToolTip": "AppUtil\\service\\CheckCondition.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T03:33:53.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T03:33:53.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CheckConditionFactory.cs",
               "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\service\\CheckConditionFactory.cs",
               "RelativeDocumentMoniker": "AppUtil\\service\\CheckConditionFactory.cs",
@@ -67,12 +84,11 @@
               "RelativeToolTip": "AppUtil\\service\\CheckConditionFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T03:04:03.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T03:04:03.525Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ErrorCodeModel.cs",
               "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\ErrorCodeModel.cs",
               "RelativeDocumentMoniker": "AppUtil\\Errorcode\\ErrorCodeModel.cs",
@@ -84,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SpecialErrorCode.cs",
               "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\SpecialErrorCode.cs",
               "RelativeDocumentMoniker": "AppUtil\\Errorcode\\SpecialErrorCode.cs",
@@ -96,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LoadErrorCodeConfig.cs",
               "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\LoadErrorCodeConfig.cs",
               "RelativeDocumentMoniker": "AppUtil\\Errorcode\\LoadErrorCodeConfig.cs",
@@ -108,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MySftp.cs",
               "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\service\\MySftp.cs",
               "RelativeDocumentMoniker": "AppUtil\\service\\MySftp.cs",
@@ -120,20 +136,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ErrorCodeMapper.cs",
               "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\ErrorCodeMapper.cs",
               "RelativeDocumentMoniker": "AppUtil\\Errorcode\\ErrorCodeMapper.cs",
               "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\ErrorCodeMapper.cs",
               "RelativeToolTip": "AppUtil\\Errorcode\\ErrorCodeMapper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswDkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T09:14:23.617Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ErrorCodeAnalysis.cs",
               "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\ErrorCodeAnalysis.cs",
               "RelativeDocumentMoniker": "AppUtil\\Errorcode\\ErrorCodeAnalysis.cs",

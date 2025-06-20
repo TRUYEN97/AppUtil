@@ -55,16 +55,24 @@ namespace AppUtil.ErrorCode
             string[] lines = File.ReadAllLines(filePath);
             return AddErrorCode(lines);
         }
-
-        public string GetErrorcode(string logText)
+        public bool TryGetErrorcode(string logText, out string functionName, out string errorcode)
         {
-            if (TryGetErrorcode(logText, out string functionName, out string errorcode) && !string.IsNullOrWhiteSpace(errorcode))
+            try
             {
-                return errorcode;
+                if (errorCodeAnalysis.TryGetErrorCode(logText, out functionName, out errorcode) && !string.IsNullOrWhiteSpace(errorcode))
+                {
+                    return true;
+                }
+                errorcode = errorCodeAnalysis.CreateNewErrorcode(functionName);
+                UpdateNewErrorCode(functionName, errorcode);
+                return !string.IsNullOrWhiteSpace(errorcode);
             }
-            string newErrorcode = errorCodeAnalysis.CreateNewErrorcode(functionName);
-            UpdateNewErrorCode(functionName, newErrorcode);
-            return newErrorcode;
+            catch (Exception)
+            {
+                functionName = null;
+                errorcode = null;
+                return false;
+            }
         }
 
         private void UpdateNewErrorCode(string functionName, string newErrorcode)
@@ -98,11 +106,6 @@ namespace AppUtil.ErrorCode
                 }
             }
             File.AppendAllText(filePath, line);
-        }
-
-        public bool TryGetErrorcode(string logText, out string functionName, out string errorcode)
-        {
-            return errorCodeAnalysis.TryGetErrorCode(logText, out functionName, out errorcode);
         }
 
         private bool AddErrorCode(string[] lines)
