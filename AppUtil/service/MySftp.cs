@@ -465,7 +465,7 @@ namespace AppUtil.Service
         public bool TryReadAllLines(string remoteFilePath, out string[] lines)
         {
             lines = ReadAllLines(remoteFilePath);
-            return lines == null || lines.Length == 0;
+            return lines != null;
         }
     }
 }

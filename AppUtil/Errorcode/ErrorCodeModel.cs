@@ -13,6 +13,11 @@ namespace AppUtil.ErrorCode
             MaxLength = maxLength;
         }
 
+        public void Clear()
+        {
+            errorcodes.Clear();
+        }
+
         public void Remove(string funcName)
         {
             if (string.IsNullOrWhiteSpace(funcName))

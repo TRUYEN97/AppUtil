@@ -2,7 +2,6 @@
 
 using System;
 using System.Collections.Generic;
-using static System.Collections.Specialized.BitVector32;
 
 namespace AppUtil.ErrorCode
 {
@@ -13,7 +12,19 @@ namespace AppUtil.ErrorCode
         {
             _specialActions = new Dictionary<string, Func<string, string>>();
         }
+        public void Clear()
+        {
+            _specialActions.Clear();
+        }
 
+        public void Remove(string funcName)
+        {
+            if (string.IsNullOrWhiteSpace(funcName))
+            {
+                return;
+            }
+            _specialActions.Remove(funcName);
+        }
         public bool AddSpecialAction(string funcName, Func<string, string> specialAction)
         {
             if (string.IsNullOrWhiteSpace(funcName) || specialAction == null)
