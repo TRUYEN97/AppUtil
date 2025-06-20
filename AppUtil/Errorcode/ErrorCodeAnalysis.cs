@@ -25,6 +25,18 @@ namespace AppUtil.ErrorCode
         public bool TryGetErrorCode(string logText, out string funcName, out string errorcode)
         {
             string str = GetTestResultStr(logText);
+            if (str?.Contains("] TEST SUMMARY: SKIP") == true)
+            {
+                funcName = "SKIP";
+                errorcode = "SKIP";
+                return true;
+            }
+            else if (str?.Contains("] TEST SUMMARY: PASS") == true)
+            {
+                funcName = "PASS";
+                errorcode = "PASS";
+                return false;
+            }
             string faildCode = GetCode(str);
             funcName = GetFunctionName(str, faildCode);
             if (_specialErrorCode.IsSpecial(funcName, logText, out errorcode) && !string.IsNullOrWhiteSpace(errorcode))
