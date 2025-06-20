@@ -5,10 +5,12 @@ namespace AppUtil.ErrorCode
     internal class ErrorCodeModel
     {
         private readonly Dictionary<string, string> errorcodes;
+        public int MaxLength { get; set; }
 
-        public ErrorCodeModel()
+        public ErrorCodeModel(int maxLength )
         {
             errorcodes = new Dictionary<string, string>();
+            MaxLength = maxLength;
         }
 
         public void Remove(string funcName)
@@ -29,6 +31,10 @@ namespace AppUtil.ErrorCode
             }
             funcName = funcName.Trim().ToUpper();
             errorcode = errorcode.Trim().ToUpper();
+            if (errorcode.Length > MaxLength)
+            {
+                errorcode = errorcode.Substring(0, MaxLength);
+            }
             errorcodes[funcName] = errorcode;
             return true;
         }

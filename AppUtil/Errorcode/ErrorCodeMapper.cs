@@ -8,84 +8,87 @@ namespace AppUtil.ErrorCode
     public class ErrorCodeMapper
     {
         private readonly static Lazy<ErrorCodeMapper> instance = new Lazy<ErrorCodeMapper>(() => new ErrorCodeMapper());
-        private readonly ErrorCodeMapperConfig config;
         private readonly ErrorCodeModel model;
         private readonly SpecialErrorCode specialError;
         private readonly ErrorCodeAnalysis errorCodeAnalysis;
+        private ErrorCodeMapperConfig _config;
         private ErrorCodeMapper()
         {
-            config = new ErrorCodeMapperConfig();
-            model = new ErrorCodeModel();
+            int maxLength = 6;
+            model = new ErrorCodeModel(maxLength);
             specialError = new SpecialErrorCode();
-            errorCodeAnalysis = new ErrorCodeAnalysis(model, specialError, 6);
+            errorCodeAnalysis = new ErrorCodeAnalysis(model, specialError, maxLength);
+            Config = LoadErrorCodeConfig.Instance.Config;
         }
-        private static ErrorCodeMapper Instance => instance.Value;
-        public static SftpConfig SftpConfig { get => Instance.config.SftpConfig; set => Instance.config.SftpConfig = value; }
-        public static string RemoteDir { get => Instance.config.RemoteDir; set => Instance.config.RemoteDir = value; }
-        public static string Product { get => Instance.config.Product; set => Instance.config.Product = value; }
-        public static string Station { get => Instance.config.Station; set => Instance.config.Station = value; }
+        public static ErrorCodeMapper Instance => instance.Value;
+        public ErrorCodeMapperConfig Config { get { return _config; } set { if (value != null) _config = value; } }
+        public SftpConfig SftpConfig { get => _config.SftpConfig; set => _config.SftpConfig = value; }
+        public string RemoteDir { get => _config.RemoteDir; set => _config.RemoteDir = value; }
+        public string Product { get => _config.Product; set => _config.Product = value; }
+        public string Station { get => _config.Station; set => _config.Station = value; }
         public SpecialErrorCode SpecialErrorCode => specialError;
+        public string RemoteNewFilePath => Path.Combine(RemoteDir, Product, Station, "newErrorCodes.csv");
+        public string RemoteFilePath => Path.Combine(RemoteDir, Product, Station, "ErrorCodes.csv");
 
-        public static bool LoadErrorcodeFromServer()
+        public bool LoadErrorcodeFromServer()
         {
-            using (var sftp = new MySftp(Instance.config.SftpConfig))
+            using (var sftp = new MySftp(Instance._config.SftpConfig))
             {
                 if (!sftp.Connect())
                 {
                     return false;
                 }
-                if (!sftp.TryReadAllLines(Instance.config.RemoteFilePath, out string[] lines))
+                if (!sftp.TryReadAllLines(RemoteFilePath, out string[] lines))
                 {
                     return false;
                 }
-                return Instance.AddErrorCode(lines);
+                return AddErrorCode(lines);
             }
         }
-        public static bool LoadErrorcodeFromFile()
+        public bool LoadErrorcodeFromFile()
         {
-            string filePath = Instance.config.LocalFilePath;
+            string filePath = Instance._config.LocalFilePath;
             if (string.IsNullOrEmpty(filePath) || !File.Exists(filePath))
             {
                 return false;
             }
             string[] lines = File.ReadAllLines(filePath);
-            return Instance.AddErrorCode(lines);
+            return AddErrorCode(lines);
         }
 
-        public static string GetErrorcode(string logText)
+        public string GetErrorcode(string logText)
         {
             if (TryGetErrorcode(logText, out string functionName, out string errorcode) && !string.IsNullOrWhiteSpace(errorcode))
             {
                 return errorcode;
             }
-            string newErrorcode = Instance.errorCodeAnalysis.CreateNewErrorcode(functionName);
+            string newErrorcode = errorCodeAnalysis.CreateNewErrorcode(functionName);
             UpdateNewErrorCode(functionName, newErrorcode);
             return newErrorcode;
         }
 
-        private static void UpdateNewErrorCode(string functionName, string newErrorcode)
+        private void UpdateNewErrorCode(string functionName, string newErrorcode)
         {
-            Instance.model.Set(functionName, newErrorcode);
+            model.Set(functionName, newErrorcode);
             string line = $"{functionName};{newErrorcode}".ToUpper();
             UpdateToLocalFile(line);
             UpdateToSftpFile(line);
         }
 
-        private static void UpdateToSftpFile(string line)
+        private void UpdateToSftpFile(string line)
         {
-            using (var sftp = new MySftp(Instance.config.SftpConfig))
+            using (var sftp = new MySftp(Instance._config.SftpConfig))
             {
                 if (sftp.Connect())
                 {
-                    string remotePath = Instance.config.RemoteNewFilePath;
-                    sftp.AppendLine(remotePath, line);
+                    sftp.AppendLine(RemoteNewFilePath, line);
                 }
             }
         }
 
-        private static void UpdateToLocalFile(string line)
+        private void UpdateToLocalFile(string line)
         {
-            string filePath = Instance.config.LocalFilePath;
+            string filePath = _config.LocalFilePath;
             if (!File.Exists(filePath))
             {
                 string dir = Path.GetDirectoryName(filePath);
@@ -97,9 +100,9 @@ namespace AppUtil.ErrorCode
             File.AppendAllText(filePath, line);
         }
 
-        public static bool TryGetErrorcode(string logText, out string functionName, out string errorcode)
+        public bool TryGetErrorcode(string logText, out string functionName, out string errorcode)
         {
-            return Instance.errorCodeAnalysis.TryGetErrorCode(logText, out functionName, out errorcode);
+            return errorCodeAnalysis.TryGetErrorCode(logText, out functionName, out errorcode);
         }
 
         private bool AddErrorCode(string[] lines)
@@ -110,7 +113,9 @@ namespace AppUtil.ErrorCode
                 string[] elems = line.Split(new char[] { ',', ';' });
                 if (elems.Length >= 2)
                 {
-                    model.Set(elems[0], elems[1]);
+                    string funcName = elems[0];
+                    string errorcode = elems[1];
+                    model.Set(funcName, errorcode);
                 }
             }
             return true;

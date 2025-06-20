@@ -10,61 +10,104 @@ namespace AppUtil.Service
         private const string COUNT_KEY = "COUNT_KEY";
         private const string SPEC_KEY = "SPEC_KEY";
         private const string MAC_KEY = "MAC_KEY";
-        private static readonly Lazy<CheckCondition> instance = new Lazy<CheckCondition>(() => new CheckCondition());
+        private int _index;
 
+        public int Index { get => _index; private set => _index = value < 0 ? 0 : value; }
 
-
-        private static CheckCondition Instance => instance.Value;
-
-        public static bool IsOldMac(string mac)
+        internal CheckCondition(int index)
         {
-            if (string.IsNullOrWhiteSpace(Instance.Mac) || string.IsNullOrWhiteSpace(mac))
+            Index = index;
+        }
+
+        public bool IsOldMac(string mac)
+        {
+            if (string.IsNullOrWhiteSpace(OldMac) || string.IsNullOrWhiteSpace(mac))
             {
                 return false;
             }
-            if (Instance.Mac.Equals(mac, StringComparison.OrdinalIgnoreCase))
+            if (OldMac.Equals(mac, StringComparison.OrdinalIgnoreCase))
             {
                 return true;
             }
             return false;
         }
-        public static void SetMac(string mac)
-        {
-            Instance.Mac = mac;
-        }
 
-        public static bool IsFailedTimeOutOfSpec => Instance.Count >= Instance.Spec;
-        public static int GetSpec => Instance.Spec;
+        public bool IsFailedTimeOutOfSpec => Count >= Spec;
 
-        public static void SetSpec(int spec)
-        {
-            Instance.Spec = spec < 1 ? 1 : spec;
-        }
 
-        public static void SetFailed(string errorcode)
+        public void SetFailed(string errorcode)
         {
             if (string.IsNullOrWhiteSpace(errorcode))
             {
                 return;
             }
-            if (Instance.ErrorCode != errorcode)
+            if (ErrorCode != errorcode)
             {
-                Instance.ErrorCode = errorcode;
-                Instance.Count = 1;
+                ErrorCode = errorcode;
+                Count = 1;
             }
             else
             {
-                Instance.Count++;
+                Count++;
             }
 
         }
 
-        public static void SetPass()
+        public void SetPass()
         {
-            Instance.ErrorCode = "";
-            Instance.Mac = "";
-            Instance.Count = 0;
+            ErrorCode = "";
+            OldMac = "";
+            Count = 0;
         }
+
+
+        public string ErrorCode
+        {
+            get
+            {
+                return GetValue<string>($"{ERROR_KEY}-{Index}", null);
+            }
+            private set
+            {
+                SaveStringValue($"{ERROR_KEY}-{Index}", value ?? "");
+            }
+        }
+        public string OldMac
+        {
+            get
+            {
+                return GetValue<string>($"{MAC_KEY}-{Index}", null);
+            }
+            set
+            {
+                SaveStringValue($"{MAC_KEY}-{Index}", value ?? "");
+            }
+        }
+
+        public int Count
+        {
+            get
+            {
+                return GetValue($"{COUNT_KEY}-{Index}", 0);
+            }
+            private set
+            {
+                SaveIntValue($"{COUNT_KEY}-{Index}", value < 0 ? 0 : value);
+            }
+        }
+
+        public int Spec
+        {
+            get
+            {
+                return GetValue($"{SPEC_KEY}-{Index}", 3);
+            }
+            set
+            {
+                SaveIntValue($"{SPEC_KEY}-{Index}", value < 1 ? 1 : value);
+            }
+        }
+
 
         private static void SaveIntValue(string keyWord, int value)
         {
@@ -78,7 +121,7 @@ namespace AppUtil.Service
         {
             using (RegistryKey key = Registry.CurrentUser.CreateSubKey(SUB_KEY))
             {
-                key.SetValue(keyWord, value?? "");
+                key.SetValue(keyWord, value ?? "");
             }
         }
         private static T GetValue<T>(string keyWord, T def)
@@ -92,54 +135,5 @@ namespace AppUtil.Service
                 return (T)key.GetValue(keyWord, def);
             }
         }
-
-
-        private string ErrorCode
-        {
-            get
-            {
-                return GetValue<string>(ERROR_KEY, null);
-            }
-            set
-            {
-                SaveStringValue(ERROR_KEY, value);
-            }
-        }
-        private string Mac
-        {
-            get
-            {
-                return GetValue<string>(MAC_KEY, null);
-            }
-            set
-            {
-                SaveStringValue(MAC_KEY, value);
-            }
-        }
-
-        private int Count
-        {
-            get
-            {
-                return GetValue(COUNT_KEY, 0);
-            }
-            set
-            {
-                SaveIntValue(COUNT_KEY, value);
-            }
-        }
-
-        private int Spec
-        {
-            get
-            {
-                return GetValue(SPEC_KEY, 3);
-            }
-            set
-            {
-                SaveIntValue(SPEC_KEY, value);
-            }
-        }
-
     }
 }
