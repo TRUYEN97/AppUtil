@@ -17,11 +17,13 @@ namespace AppUtil.ErrorCode
             Product = null;
             Station = null;
             LocalFilePath = "./Errorcodes.csv";
+            ErrorCodeMaxLength = 6;
         }
         public SftpConfig SftpConfig { get => _sftpConfig; set { if (value != null) _sftpConfig = value; } }
         public string RemoteDir { get => _remoteDir; set => _remoteDir = string.IsNullOrWhiteSpace(value) ? "ErrorCode" : value.Trim().ToUpper(); }
         public string Product { get => _product; set => _product = string.IsNullOrWhiteSpace(value) ? "PRODUCT" : value.Trim().ToUpper(); }
         public string Station { get => _station; set => _station = string.IsNullOrWhiteSpace(value) ? "STATION" : value.Trim().ToUpper(); }
         public string LocalFilePath { get; set; }
+        public int ErrorCodeMaxLength { get; set; }
     }
 }

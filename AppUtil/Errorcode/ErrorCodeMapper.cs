@@ -14,11 +14,10 @@ namespace AppUtil.ErrorCode
         private ErrorCodeMapperConfig _config;
         private ErrorCodeMapper()
         {
-            int maxLength = 6;
-            model = new ErrorCodeModel(maxLength);
-            specialError = new SpecialErrorCode();
-            errorCodeAnalysis = new ErrorCodeAnalysis(model, specialError, maxLength);
             Config = LoadErrorCodeConfig.Instance.Config;
+            model = new ErrorCodeModel();
+            specialError = new SpecialErrorCode();
+            errorCodeAnalysis = new ErrorCodeAnalysis(model, specialError);
         }
         public static ErrorCodeMapper Instance => instance.Value;
         public ErrorCodeMapperConfig Config { get { return _config; } set { if (value != null) _config = value; } }

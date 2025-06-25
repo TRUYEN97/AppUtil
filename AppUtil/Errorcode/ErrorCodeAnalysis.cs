@@ -15,36 +15,62 @@ namespace AppUtil.ErrorCode
         private readonly SpecialErrorCode _specialErrorCode;
         public int MaxLength { get; set; }
 
-        public ErrorCodeAnalysis(ErrorCodeModel errorCodeModel, SpecialErrorCode specialErrorCode, int maxlength)
+        public ErrorCodeAnalysis(ErrorCodeModel errorCodeModel, SpecialErrorCode specialErrorCode)
         {
             _errorCodeModel = errorCodeModel;
             _specialErrorCode = specialErrorCode;
-            MaxLength = maxlength;
+            MaxLength = Int16.MaxValue;
         }
 
         public bool TryGetErrorCode(string logText, out string funcName, out string errorcode)
         {
-            string str = GetTestResultStr(logText);
-            if (str?.Contains("] TEST SUMMARY: SKIP") == true)
-            {
-                funcName = "SKIP";
-                errorcode = "SKIP";
-                return true;
-            }
-            else if (str?.Contains("] TEST SUMMARY: PASS") == true)
-            {
-                funcName = "PASS";
-                errorcode = "PASS";
+            funcName = string.Empty;
+            errorcode = string.Empty;
+
+            string resultStr = GetTestResultStr(logText);
+            if (string.IsNullOrWhiteSpace(resultStr))
                 return false;
+
+            if (TryHandleSummaryResult(resultStr, out funcName, out errorcode, out bool shouldReturn))
+                return shouldReturn;
+
+            string failCode = GetCode(resultStr);
+            funcName = GetFunctionName(resultStr, failCode);
+
+            if (!_errorCodeModel.TryGet(funcName, out string baseErrorcode))
+            {
+                baseErrorcode = string.Empty;
             }
-            string faildCode = GetCode(str);
-            funcName = GetFunctionName(str, faildCode);
-            if (_specialErrorCode.IsSpecial(funcName, logText, out errorcode) && !string.IsNullOrWhiteSpace(errorcode))
+            if (_specialErrorCode.IsSpecial(funcName, logText, baseErrorcode, out errorcode) && !string.IsNullOrWhiteSpace(errorcode))
             {
                 return true;
             }
-            return _errorCodeModel.TryGet(funcName, out errorcode);
+            errorcode = baseErrorcode;
+            return !string.IsNullOrWhiteSpace(errorcode);
         }
+
+        private bool TryHandleSummaryResult(string resultStr, out string funcName, out string errorcode, out bool shouldReturn)
+        {
+            funcName = errorcode = string.Empty;
+            shouldReturn = false;
+
+            if (resultStr.Contains("] TEST SUMMARY: SKIP"))
+            {
+                funcName = errorcode = "SKIP";
+                shouldReturn = true;
+                return true;
+            }
+
+            if (resultStr.Contains("] TEST SUMMARY: PASS"))
+            {
+                funcName = errorcode = "PASS";
+                shouldReturn = false;
+                return true;
+            }
+
+            return false;
+        }
+
 
         public string CreateNewErrorcode(string functionName)
         {

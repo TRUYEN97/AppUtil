@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace AppUtil.ErrorCode
 {
@@ -7,10 +8,10 @@ namespace AppUtil.ErrorCode
         private readonly Dictionary<string, string> errorcodes;
         public int MaxLength { get; set; }
 
-        public ErrorCodeModel(int maxLength )
+        public ErrorCodeModel()
         {
             errorcodes = new Dictionary<string, string>();
-            MaxLength = maxLength;
+            MaxLength = Int16.MaxValue;
         }
 
         public void Clear()
