@@ -8,6 +8,7 @@ namespace AppUtil.ErrorCode
     public class SpecialErrorCode
     {
         private readonly Dictionary<string, Func<string, string, string>> _specialActions;
+        public int MaxLength { get; set; }
         public SpecialErrorCode()
         {
             _specialActions = new Dictionary<string, Func<string, string, string>>();
@@ -75,6 +76,10 @@ namespace AppUtil.ErrorCode
                 if (string.IsNullOrWhiteSpace(errorcode))
                 {
                     errorcode = defaultErrorcode ?? string.Empty;
+                }
+                else if(errorcode.Length > MaxLength)
+                {
+                    errorcode = errorcode.Substring(0, MaxLength);
                 }
             }
         }

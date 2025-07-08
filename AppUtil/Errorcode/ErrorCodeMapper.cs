@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using AppUtil.Service;
-using Renci.SshNet.Messages;
 
 namespace AppUtil.ErrorCode
 {
@@ -14,13 +13,13 @@ namespace AppUtil.ErrorCode
         private ErrorCodeMapperConfig _config;
         private ErrorCodeMapper()
         {
-            Config = LoadErrorCodeConfig.Instance.Config;
-            model = new ErrorCodeModel();
-            specialError = new SpecialErrorCode();
-            errorCodeAnalysis = new ErrorCodeAnalysis(model, specialError);
+            _config = LoadErrorCodeConfig.Instance.Config;
+            model = new ErrorCodeModel() { MaxLength = _config.ErrorCodeMaxLength };
+            specialError = new SpecialErrorCode() { MaxLength = _config.ErrorCodeMaxLength };
+            errorCodeAnalysis = new ErrorCodeAnalysis(model, specialError) { MaxLength = _config.ErrorCodeMaxLength };
         }
         public static ErrorCodeMapper Instance => instance.Value;
-        public ErrorCodeMapperConfig Config { get { return _config; } set { if (value != null) _config = value; } }
+        public ErrorCodeMapperConfig Config => _config;
         public SftpConfig SftpConfig { get => _config.SftpConfig; set => _config.SftpConfig = value; }
         public string RemoteDir { get => _config.RemoteDir; set => _config.RemoteDir = value; }
         public string Product { get => _config.Product; set => _config.Product = value; }
@@ -44,6 +43,7 @@ namespace AppUtil.ErrorCode
                 return AddErrorCode(lines);
             }
         }
+
         public bool LoadErrorcodeFromFile()
         {
             string filePath = Instance._config.LocalFilePath;
@@ -54,6 +54,7 @@ namespace AppUtil.ErrorCode
             string[] lines = File.ReadAllLines(filePath);
             return AddErrorCode(lines);
         }
+
         public bool TryGetErrorcode(string logText, out string functionName, out string errorcode)
         {
             try

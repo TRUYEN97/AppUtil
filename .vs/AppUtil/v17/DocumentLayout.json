@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "D:\\C#\\lib\\AppUtil\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\errorcode\\errorcodemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\errorcode\\errorcodemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\errorcode\\errorcodemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\errorcode\\errorcodemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\errorcode\\specialerrorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\errorcode\\specialerrorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\communicate\\baseinoutstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\communicate\\baseinoutstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SpecialErrorCode.cs",
-              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\SpecialErrorCode.cs",
-              "RelativeDocumentMoniker": "AppUtil\\Errorcode\\SpecialErrorCode.cs",
-              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\SpecialErrorCode.cs",
-              "RelativeToolTip": "AppUtil\\Errorcode\\SpecialErrorCode.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADwvyQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T01:35:44.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ErrorCodeModel.cs",
-              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\ErrorCodeModel.cs",
-              "RelativeDocumentMoniker": "AppUtil\\Errorcode\\ErrorCodeModel.cs",
-              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\ErrorCodeModel.cs",
-              "RelativeToolTip": "AppUtil\\Errorcode\\ErrorCodeModel.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA6wB8AAAAnAAAAAAAAAA==",
+              "Title": "BaseInOutStream.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Communicate\\BaseInOutStream.cs",
+              "RelativeDocumentMoniker": "AppUtil\\Communicate\\BaseInOutStream.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Communicate\\BaseInOutStream.cs",
+              "RelativeToolTip": "AppUtil\\Communicate\\BaseInOutStream.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T01:33:30.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ErrorCodeMapper.cs",
-              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\ErrorCodeMapper.cs",
-              "RelativeDocumentMoniker": "AppUtil\\Errorcode\\ErrorCodeMapper.cs",
-              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\ErrorCodeMapper.cs",
-              "RelativeToolTip": "AppUtil\\Errorcode\\ErrorCodeMapper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T01:31:39.608Z",
+              "WhenOpened": "2025-07-08T01:27:39.327Z",
               "EditorCaption": ""
             }
           ]

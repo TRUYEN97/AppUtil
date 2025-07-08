@@ -85,6 +85,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\Util.cs" />
+    <Compile Include="Communicate\BaseCommunicate.cs" />
+    <Compile Include="Communicate\BaseInOutStream.cs" />
+    <Compile Include="Communicate\BaseProcess.cs" />
+    <Compile Include="Communicate\Implement\CmdProcess.cs" />
+    <Compile Include="Communicate\Implement\PingProcess.cs" />
+    <Compile Include="Communicate\Implement\Serial.cs" />
+    <Compile Include="Communicate\InOutStream\DynamicTextReader.cs" />
+    <Compile Include="Communicate\Interface\IConnectable.cs" />
+    <Compile Include="Communicate\Interface\IReceiver.cs" />
+    <Compile Include="Communicate\Interface\IWriter.cs" />
+    <Compile Include="Communicate\InOutStream\StringWriter.cs" />
+    <Compile Include="Communicate\InOutStream\StringStreamReader.cs" />
     <Compile Include="Errorcode\ErrorCodeAnalysis.cs" />
     <Compile Include="Errorcode\ErrorCodeMapper.cs" />
     <Compile Include="Errorcode\ErrorCodeMapperConfig.cs" />
@@ -92,10 +104,12 @@
     <Compile Include="Errorcode\LoadErrorCodeConfig.cs" />
     <Compile Include="Errorcode\SpecialErrorCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="service\CheckCondition.cs" />
-    <Compile Include="service\CheckConditionFactory.cs" />
-    <Compile Include="service\MySftp.cs" />
-    <Compile Include="service\SftpConfig.cs" />
+    <Compile Include="Service\CheckCondition.cs" />
+    <Compile Include="Service\CheckConditionFactory.cs" />
+    <Compile Include="Service\MySftp.cs" />
+    <Compile Include="Service\SftpConfig.cs" />
+    <Compile Include="Timer\Interfcae\IStopwatch.cs" />
+    <Compile Include="Timer\Stopwatch.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -104,6 +118,7 @@
   <ItemGroup>
     <Content Include="FodyWeavers.xml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.6.9.2\build\Fody.targets" Condition="Exists('..\packages\Fody.6.9.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
