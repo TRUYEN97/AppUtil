@@ -104,9 +104,11 @@
     <Compile Include="Errorcode\LoadErrorCodeConfig.cs" />
     <Compile Include="Errorcode\SpecialErrorCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service\CheckCondition.cs" />
+    <Compile Include="Service\CheckTestFailedCondition.cs" />
     <Compile Include="Service\CheckConditionFactory.cs" />
+    <Compile Include="Service\GoldenVerify.cs" />
     <Compile Include="Service\MySftp.cs" />
+    <Compile Include="Service\RegistryUtil.cs" />
     <Compile Include="Service\SftpConfig.cs" />
     <Compile Include="Timer\Interfcae\IStopwatch.cs" />
     <Compile Include="Timer\Stopwatch.cs" />

@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\C#\\lib\\AppUtil\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\communicate\\baseinoutstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\communicate\\baseinoutstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\service\\goldenverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\goldenverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\service\\checkconditionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\checkconditionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\service\\checktestfailedcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\checktestfailedcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BaseInOutStream.cs",
-              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Communicate\\BaseInOutStream.cs",
-              "RelativeDocumentMoniker": "AppUtil\\Communicate\\BaseInOutStream.cs",
-              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Communicate\\BaseInOutStream.cs",
-              "RelativeToolTip": "AppUtil\\Communicate\\BaseInOutStream.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAcAAAApAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CheckConditionFactory.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\CheckConditionFactory.cs",
+              "RelativeDocumentMoniker": "AppUtil\\Service\\CheckConditionFactory.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\CheckConditionFactory.cs",
+              "RelativeToolTip": "AppUtil\\Service\\CheckConditionFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T01:27:39.327Z",
+              "WhenOpened": "2025-07-18T04:11:18.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GoldenVerify.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\GoldenVerify.cs",
+              "RelativeDocumentMoniker": "AppUtil\\Service\\GoldenVerify.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\GoldenVerify.cs",
+              "RelativeToolTip": "AppUtil\\Service\\GoldenVerify.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T04:11:01.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CheckTestFailedCondition.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\CheckTestFailedCondition.cs",
+              "RelativeDocumentMoniker": "AppUtil\\Service\\CheckTestFailedCondition.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\CheckTestFailedCondition.cs",
+              "RelativeToolTip": "AppUtil\\Service\\CheckTestFailedCondition.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAcwE0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T03:52:13.335Z",
               "EditorCaption": ""
             }
           ]

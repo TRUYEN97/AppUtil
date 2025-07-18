@@ -16,7 +16,7 @@ D:\C#\lib\AppUtil\AppUtil\bin\Release\System.Memory.xml
 D:\C#\lib\AppUtil\AppUtil\bin\Release\System.Numerics.Vectors.xml
 D:\C#\lib\AppUtil\AppUtil\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
 D:\C#\lib\AppUtil\AppUtil\bin\Release\System.Threading.Tasks.Extensions.xml
-D:\C#\lib\AppUtil\AppUtil\obj\Release\AppUtil.csproj.Fody.CopyLocal.cache
-D:\C#\lib\AppUtil\AppUtil\obj\Release\AppUtil.csproj.Fody.RuntimeCopyLocal.cache
 D:\C#\lib\AppUtil\AppUtil\obj\Release\AppUtil.csproj.Up2Date
 D:\C#\lib\AppUtil\AppUtil\bin\Release\Newtonsoft.Json.xml
+D:\C#\lib\AppUtil\AppUtil\obj\Release\AppUtil.csproj.Fody.CopyLocal.cache
+D:\C#\lib\AppUtil\AppUtil\obj\Release\AppUtil.csproj.Fody.RuntimeCopyLocal.cache
