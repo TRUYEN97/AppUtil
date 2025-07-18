@@ -7,12 +7,20 @@
       "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\goldenverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\service\\checkconditionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\checkconditionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\errorcode\\loaderrorcodeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\errorcode\\loaderrorcodeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\service\\checktestfailedcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\service\\fileutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\fileutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\service\\checktestfailedcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\checktestfailedcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\service\\checkconditionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\checkconditionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +30,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "LoadErrorCodeConfig.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\LoadErrorCodeConfig.cs",
+              "RelativeDocumentMoniker": "AppUtil\\Errorcode\\LoadErrorCodeConfig.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\LoadErrorCodeConfig.cs",
+              "RelativeToolTip": "AppUtil\\Errorcode\\LoadErrorCodeConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T09:48:18.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileUtil.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\FileUtil.cs",
+              "RelativeDocumentMoniker": "AppUtil\\Service\\FileUtil.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\FileUtil.cs",
+              "RelativeToolTip": "AppUtil\\Service\\FileUtil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T09:43:22.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CheckConditionFactory.cs",
               "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\CheckConditionFactory.cs",
               "RelativeDocumentMoniker": "AppUtil\\Service\\CheckConditionFactory.cs",
@@ -34,8 +66,7 @@
               "RelativeToolTip": "AppUtil\\Service\\CheckConditionFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T04:11:18.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T04:11:18.759Z"
             },
             {
               "$type": "Document",
@@ -45,14 +76,14 @@
               "RelativeDocumentMoniker": "AppUtil\\Service\\GoldenVerify.cs",
               "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\GoldenVerify.cs",
               "RelativeToolTip": "AppUtil\\Service\\GoldenVerify.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB0AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCEAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-18T04:11:01.603Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CheckTestFailedCondition.cs",
               "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\CheckTestFailedCondition.cs",
               "RelativeDocumentMoniker": "AppUtil\\Service\\CheckTestFailedCondition.cs",
@@ -60,8 +91,7 @@
               "RelativeToolTip": "AppUtil\\Service\\CheckTestFailedCondition.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAcwE0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T03:52:13.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T03:52:13.335Z"
             }
           ]
         }

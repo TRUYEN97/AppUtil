@@ -1,67 +1,100 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 namespace AppUtil.Service
 {
     public class GoldenVerify
     {
-        private const string LAST_TIME_KEY = "LAST_TIME_GOLDEN_TEST_KEY";
+        private const string LAST_TIME_GOOD_GOLDEN_TEST = "LAST_TIME_GOOD_GOLDEN_TEST_KEY";
+        private const string LAST_TIME_BAD_GOLDEN_TEST = "LAST_TIME_BAD_GOLDEN_TEST_KEY";
         private const string SPEC_KEY = "SPEC_KEY";
-        private const string GOLDEN_MAC_KEY = "GOLDEN_MAC_KEY";
+        public readonly HashSet<string> GoodGoldens;
+        public readonly HashSet<string> BadGoldens;
         private readonly RegistryUtil registry;
         private int _index;
         internal GoldenVerify(int index)
         {
             Index = index;
+            GoodGoldens = new HashSet<string>();
+            BadGoldens = new HashSet<string>();
             registry = new RegistryUtil(@"Software\TestCondition\GoldenVerify");
-            Enable = true;
+            GoodGoldenEnable = true;
+            BadGoldenEnable = true;
             Spec = 12.0;
-            GoldenMac = "";
         }
-        public bool Enable { get; set; }
+        public bool GoodGoldenEnable { get; set; }
+        public bool BadGoldenEnable { get; set; }
         public bool IsCanTest(string mac)
         {
-            if (Enable && IsTimeOut && !IsGoldenMac(mac))
+            if (IsTimeOutTestGoodGolden && IsTimeOutTestBadGolden)
             {
-                return false;
+                return (!GoodGoldenEnable && !BadGoldenEnable) 
+                    || IsGoodGoldenMac(mac)  
+                    || IsBadGoldenMac(mac);
+            }
+            if (GoodGoldenEnable && IsTimeOutTestGoodGolden)
+            {
+                return IsGoodGoldenMac(mac);
+            }
+            if (BadGoldenEnable && IsTimeOutTestBadGolden)
+            {
+                return IsBadGoldenMac(mac);
             }
             return true;
         }
 
+        public void CopyLog(string fileSource, string fileTaget)
+        {
+            FileUtil.CopyFile(fileSource, fileTaget);
+        }
+        public void SaveLog(string filePath, ISerializable text)
+        {
+            FileUtil.WriteAllText(filePath, text);
+        }
+
         public bool IsGoldenMacResult(string mac, bool status)
         {
-            if (IsGoldenMac(mac))
+            if (IsGoodGoldenMac(mac))
             {
                 if (status)
                 {
-                    ResetLastTime();
+                    ResetLastTimeTestGoodGolden();
+                }
+                return true;
+            }
+            if (IsBadGoldenMac(mac))
+            {
+                if (!status)
+                {
+                    ResetLastTimeTestBadGolden();
                 }
                 return true;
             }
             return false;
         }
 
-        public void ResetLastTime()
+        public void ResetLastTimeTestBadGolden()
         {
-            LastTime = DateTime.Now;
+            LastTimeTestBadGolden = DateTime.Now;
+        }
+        public void ResetLastTimeTestGoodGolden()
+        {
+            LastTimeTestGoodGolden = DateTime.Now;
+        }
+        public bool IsGoodGoldenMac(string mac)
+        {
+            return GoodGoldens.Contains(mac);
+        }
+        public bool IsBadGoldenMac(string mac)
+        {
+            return BadGoldens.Contains(mac);
         }
 
-        public bool IsGoldenMac(string mac)
-        {
-            return !string.IsNullOrEmpty(GoldenMac) && mac?.ToUpper() == GoldenMac;
-        }
-        public bool IsTimeOut => (DateTime.Now - LastTime).TotalHours >= Spec;
+        public bool IsTimeOutTestGoodGolden => (DateTime.Now - LastTimeTestGoodGolden).TotalHours >= Spec;
+        public bool IsTimeOutTestBadGolden => (DateTime.Now - LastTimeTestBadGolden).TotalHours >= Spec;
         public int Index { get => _index; private set => _index = value < 0 ? 0 : value; }
-        public string GoldenMac
-        {
-            get
-            {
-                return registry.GetValue($"{GOLDEN_MAC_KEY}-{Index}", "")?.ToUpper().Trim();
-            }
-            set
-            {
-                registry.SaveStringValue($"{GOLDEN_MAC_KEY}-{Index}", value?.ToUpper().Trim() ?? "");
-            }
-        }
+
         public double Spec
         {
             get
@@ -73,11 +106,11 @@ namespace AppUtil.Service
                 registry.SaveDoubleValue($"{SPEC_KEY}-{Index}", value);
             }
         }
-        public DateTime LastTime
+        public DateTime LastTimeTestBadGolden
         {
             get
             {
-                string timeString = registry.GetValue($"{LAST_TIME_KEY}-{Index}", "");
+                string timeString = registry.GetValue($"{LAST_TIME_BAD_GOLDEN_TEST}-{Index}", "");
                 if (DateTime.TryParse(timeString, out var parsedTime))
                 {
                     return parsedTime;
@@ -86,7 +119,23 @@ namespace AppUtil.Service
             }
             private set
             {
-                registry.SaveStringValue($"{LAST_TIME_KEY}-{Index}", value.ToString("o"));
+                registry.SaveStringValue($"{LAST_TIME_BAD_GOLDEN_TEST}-{Index}", value.ToString("o"));
+            }
+        }
+        public DateTime LastTimeTestGoodGolden
+        {
+            get
+            {
+                string timeString = registry.GetValue($"{LAST_TIME_GOOD_GOLDEN_TEST}-{Index}", "");
+                if (DateTime.TryParse(timeString, out var parsedTime))
+                {
+                    return parsedTime;
+                }
+                return default;
+            }
+            private set
+            {
+                registry.SaveStringValue($"{LAST_TIME_GOOD_GOLDEN_TEST}-{Index}", value.ToString("o"));
             }
         }
     }

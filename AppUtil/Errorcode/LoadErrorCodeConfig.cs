@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using AppUtil.Service;
 using Newtonsoft.Json;
 
 namespace AppUtil.ErrorCode
@@ -49,7 +50,7 @@ namespace AppUtil.ErrorCode
             try
             {
                 string cfJson = JsonConvert.SerializeObject(_config, Formatting.Indented);
-                File.WriteAllText(cfPath, cfJson);
+                FileUtil.WriteAllText(cfPath, cfJson);
                 return true;
             }
             catch (Exception)
