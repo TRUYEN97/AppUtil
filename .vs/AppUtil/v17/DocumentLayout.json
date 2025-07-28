@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "D:\\C#\\lib\\AppUtil\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\service\\goldenverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\errorcode\\errorcodemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\errorcode\\errorcodemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\service\\registryutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\registryutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|d:\\c#\\lib\\apputil\\apputil\\errorcode\\errorcodemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\errorcode\\errorcodemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|D:\\C#\\lib\\AppUtil\\apputil\\service\\goldenverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E4ED8DF-81E8-4980-BA9C-6CBAEDB9C1B3}|AppUtil\\AppUtil.csproj|solutionrelative:apputil\\service\\goldenverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -30,11 +42,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ErrorCodeMapper.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\ErrorCodeMapper.cs",
+              "RelativeDocumentMoniker": "AppUtil\\Errorcode\\ErrorCodeMapper.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\ErrorCodeMapper.cs",
+              "RelativeToolTip": "AppUtil\\Errorcode\\ErrorCodeMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T03:31:05.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ErrorCodeModel.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\ErrorCodeModel.cs",
+              "RelativeDocumentMoniker": "AppUtil\\Errorcode\\ErrorCodeModel.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\ErrorCodeModel.cs",
+              "RelativeToolTip": "AppUtil\\Errorcode\\ErrorCodeModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T03:30:57.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RegistryUtil.cs",
+              "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\RegistryUtil.cs",
+              "RelativeDocumentMoniker": "AppUtil\\Service\\RegistryUtil.cs",
+              "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\RegistryUtil.cs",
+              "RelativeToolTip": "AppUtil\\Service\\RegistryUtil.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAH8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T03:29:19.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "LoadErrorCodeConfig.cs",
               "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Errorcode\\LoadErrorCodeConfig.cs",
               "RelativeDocumentMoniker": "AppUtil\\Errorcode\\LoadErrorCodeConfig.cs",
@@ -46,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "FileUtil.cs",
               "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\FileUtil.cs",
               "RelativeDocumentMoniker": "AppUtil\\Service\\FileUtil.cs",
@@ -58,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "CheckConditionFactory.cs",
               "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\CheckConditionFactory.cs",
               "RelativeDocumentMoniker": "AppUtil\\Service\\CheckConditionFactory.cs",
@@ -70,20 +121,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "GoldenVerify.cs",
               "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\GoldenVerify.cs",
               "RelativeDocumentMoniker": "AppUtil\\Service\\GoldenVerify.cs",
               "ToolTip": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\GoldenVerify.cs",
               "RelativeToolTip": "AppUtil\\Service\\GoldenVerify.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCEAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T04:11:01.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T04:11:01.603Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "CheckTestFailedCondition.cs",
               "DocumentMoniker": "D:\\C#\\lib\\AppUtil\\AppUtil\\Service\\CheckTestFailedCondition.cs",
               "RelativeDocumentMoniker": "AppUtil\\Service\\CheckTestFailedCondition.cs",

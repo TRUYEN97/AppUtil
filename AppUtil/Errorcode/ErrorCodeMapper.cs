@@ -10,7 +10,7 @@ namespace AppUtil.ErrorCode
         private readonly ErrorCodeModel model;
         private readonly SpecialErrorCode specialError;
         private readonly ErrorCodeAnalysis errorCodeAnalysis;
-        private ErrorCodeMapperConfig _config;
+        private readonly ErrorCodeMapperConfig _config;
         private ErrorCodeMapper()
         {
             _config = LoadErrorCodeConfig.Instance.Config;
@@ -113,7 +113,7 @@ namespace AppUtil.ErrorCode
             if (lines == null) return false;
             foreach (var line in lines)
             {
-                string[] elems = line.Split(new char[] { ',', ';' });
+                string[] elems = line.Split(new char[] {';'});
                 if (elems.Length >= 2)
                 {
                     string funcName = elems[0];
